@@ -1,0 +1,259 @@
+Index: src/Readme.txt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/Readme.txt b/src/Readme.txt
+--- a/src/Readme.txt	(revision ad879856f1477458fdb3ea0b4c10de7e09c09082)
++++ b/src/Readme.txt	(date 1679475236947)
+@@ -1,0 +1,4 @@
++Woensdag 22 maart 2023
++project aangemaakt
++git form aangemaakt
++
+Index: src/Main.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>public class Main {\r\n    public static void main(String[] args) {\r\n        System.out.println(\"Hello world!\");\r\n    }\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/Main.java b/src/Main.java
+--- a/src/Main.java	(revision ad879856f1477458fdb3ea0b4c10de7e09c09082)
++++ b/src/Main.java	(date 1679495758006)
+@@ -1,5 +1,6 @@
+ public class Main {
+     public static void main(String[] args) {
++
+         System.out.println("Hello world!");
+     }
+ }
+\ No newline at end of file
+Index: src/Participants.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package PACKAGE_NAME;public class Participants {\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/Participants.java b/src/Participants.java
+--- a/src/Participants.java	(revision ad879856f1477458fdb3ea0b4c10de7e09c09082)
++++ b/src/Participants.java	(date 1679496256973)
+@@ -1,2 +1,17 @@
+-package PACKAGE_NAME;public class Participants {
++import javax.swing.*;
++
++public class Participants {
++    private JLabel name;
++    private JLabel Timeslot;
++    private JLabel hours;
++    private JFormattedTextField TimeHours;
++    private JLabel Minutes;
++    private JFormattedTextField TimeM;
++    private JTextField FullName;
++    private JButton Add;
++
++
++    private void createUIComponents() {
++        // TODO: place custom component creation code here
++    }
+ }
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"2e7a5028-065f-49a3-b7a0-0f0781ecfe51\" name=\"Changes\" comment=\"\" />\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"2NMUWHZAVnhjQLabgCqEBfu039E\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"RunOnceActivity.OpenProjectViewOnStart\": \"true\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"WebServerToolWindowFactoryState\": \"false\",\r\n    \"vue.rearranger.settings.migration\": \"true\"\r\n  }\r\n}]]></component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"2e7a5028-065f-49a3-b7a0-0f0781ecfe51\" name=\"Changes\" comment=\"\" />\r\n      <created>1679473477173</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1679473477173</updated>\r\n      <workItem from=\"1679473478608\" duration=\"2000\" />\r\n    </task>\r\n    <servers />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision ad879856f1477458fdb3ea0b4c10de7e09c09082)
++++ b/.idea/workspace.xml	(date 1679497330170)
+@@ -1,26 +1,55 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
++  <component name="AutoImportSettings">
++    <option name="autoReloadType" value="SELECTIVE" />
++  </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="2e7a5028-065f-49a3-b7a0-0f0781ecfe51" name="Changes" comment="" />
++    <list default="true" id="2e7a5028-065f-49a3-b7a0-0f0781ecfe51" name="Changes" comment="">
++      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Participants.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/Participants.form" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Participants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Participants.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Readme.txt" afterDir="false" />
++    </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+     <option name="LAST_RESOLUTION" value="IGNORE" />
+   </component>
++  <component name="FileTemplateManagerImpl">
++    <option name="RECENT_TEMPLATES">
++      <list>
++        <option value="Class" />
++      </list>
++    </option>
++  </component>
+   <component name="Git.Settings">
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
++  </component>
++  <component name="MarkdownSettingsMigration">
++    <option name="stateVersion" value="1" />
+   </component>
+   <component name="ProjectId" id="2NMUWHZAVnhjQLabgCqEBfu039E" />
+-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
++  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
++    <ConfirmationsSetting value="2" id="Add" />
++  </component>
+   <component name="ProjectViewState">
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+   <component name="PropertiesComponent"><![CDATA[{
+   "keyToString": {
++    "ASKED_ADD_EXTERNAL_FILES": "true",
+     "RunOnceActivity.OpenProjectViewOnStart": "true",
+     "RunOnceActivity.ShowReadmeOnStart": "true",
++    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
++    "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.SHOW": "true",
++    "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH": "219",
+     "WebServerToolWindowFactoryState": "false",
++    "node.js.detected.package.eslint": "true",
++    "node.js.detected.package.tslint": "true",
++    "node.js.selected.package.eslint": "(autodetect)",
++    "node.js.selected.package.tslint": "(autodetect)",
+     "vue.rearranger.settings.migration": "true"
+   }
+ }]]></component>
+@@ -32,8 +61,14 @@
+       <option name="number" value="Default" />
+       <option name="presentableId" value="Default" />
+       <updated>1679473477173</updated>
+-      <workItem from="1679473478608" duration="2000" />
++      <workItem from="1679473478608" duration="6692000" />
+     </task>
+     <servers />
+   </component>
++  <component name="TypeScriptGeneratedFilesManager">
++    <option name="version" value="3" />
++  </component>
++  <component name="VcsManagerConfiguration">
++    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
++  </component>
+ </project>
+\ No newline at end of file
+Index: src/Participants.form
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<form xmlns=\"http://www.intellij.com/uidesigner/form/\" version=\"1\" bind-to-class=\"Participants\">\r\n  <grid id=\"27dc6\" row-count=\"1\" column-count=\"1\" layout-manager=\"GridLayoutManager\">\r\n    <margin top=\"0\" left=\"0\" bottom=\"0\" right=\"0\"/>\r\n    <constraints>\r\n      <xy x=\"20\" y=\"20\" width=\"500\" height=\"400\"/>\r\n      <grid row=\"0\" column=\"0\" row-span=\"1\" col-span=\"1\" vsize-policy=\"3\" hsize-policy=\"3\" anchor=\"0\" fill=\"3\" indent=\"0\" use-parent-layout=\"false\"/>\r\n    </constraints>\r\n    <properties/>\r\n    <border type=\"none\"/>\r\n    <children/>\r\n  </grid>\r\n</form>\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/Participants.form b/src/Participants.form
+--- a/src/Participants.form	(revision ad879856f1477458fdb3ea0b4c10de7e09c09082)
++++ b/src/Participants.form	(date 1679497330104)
+@@ -1,13 +1,98 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="Participants">
+-  <grid id="27dc6" row-count="1" column-count="1" layout-manager="GridLayoutManager">
++  <grid id="27dc6" binding="back" custom-create="true" layout-manager="GridLayoutManager" row-count="3" column-count="6" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+     <margin top="0" left="0" bottom="0" right="0"/>
+     <constraints>
+-      <xy x="20" y="20" width="500" height="400"/>
+-      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
++      <xy x="24" y="20" width="605" height="473"/>
+     </constraints>
+-    <properties/>
++    <properties>
++      <background color="-15990788"/>
++    </properties>
+     <border type="none"/>
+-    <children/>
++    <children>
++      <component id="6d2a5" class="javax.swing.JLabel" binding="Timeslot" custom-create="true">
++        <constraints>
++          <grid row="1" column="0" row-span="2" col-span="1" vsize-policy="0" hsize-policy="0" anchor="9" fill="0" indent="0" use-parent-layout="false"/>
++        </constraints>
++        <properties>
++          <background color="-1"/>
++          <foreground color="-15265861"/>
++          <text value="Timeslot"/>
++          <verticalAlignment value="1"/>
++          <verticalTextPosition value="1"/>
++        </properties>
++      </component>
++      <component id="748e8" class="javax.swing.JLabel" binding="hours">
++        <constraints>
++          <grid row="1" column="1" row-span="2" col-span="1" vsize-policy="0" hsize-policy="0" anchor="9" fill="0" indent="0" use-parent-layout="false"/>
++        </constraints>
++        <properties>
++          <foreground color="-15265861"/>
++          <text value="h:"/>
++        </properties>
++      </component>
++      <component id="76d0d" class="javax.swing.JFormattedTextField" binding="TimeHours" custom-create="true">
++        <constraints>
++          <grid row="1" column="2" row-span="2" col-span="2" vsize-policy="0" hsize-policy="6" anchor="9" fill="1" indent="0" use-parent-layout="false">
++            <preferred-size width="150" height="-1"/>
++          </grid>
++        </constraints>
++        <properties>
++          <background color="-1"/>
++        </properties>
++      </component>
++      <component id="e7fb4" class="javax.swing.JLabel" binding="Minutes">
++        <constraints>
++          <grid row="1" column="4" row-span="2" col-span="1" vsize-policy="0" hsize-policy="0" anchor="9" fill="0" indent="0" use-parent-layout="false"/>
++        </constraints>
++        <properties>
++          <foreground color="-15265861"/>
++          <text value="m:"/>
++        </properties>
++      </component>
++      <component id="1bd67" class="javax.swing.JFormattedTextField" binding="TimeM" custom-create="true">
++        <constraints>
++          <grid row="1" column="5" row-span="2" col-span="1" vsize-policy="0" hsize-policy="6" anchor="9" fill="1" indent="0" use-parent-layout="false">
++            <preferred-size width="150" height="-1"/>
++          </grid>
++        </constraints>
++        <properties>
++          <background color="-1"/>
++        </properties>
++      </component>
++      <component id="4366c" class="javax.swing.JTextField" binding="FullName">
++        <constraints>
++          <grid row="0" column="3" row-span="1" col-span="3" vsize-policy="5" hsize-policy="7" anchor="1" fill="1" indent="0" use-parent-layout="false">
++            <preferred-size width="150" height="97"/>
++          </grid>
++        </constraints>
++        <properties>
++          <background color="-1"/>
++          <columns value="3"/>
++          <editable value="true"/>
++        </properties>
++      </component>
++      <component id="c5c68" class="javax.swing.JLabel" binding="name" custom-create="true">
++        <constraints>
++          <grid row="0" column="0" row-span="1" col-span="3" vsize-policy="1" hsize-policy="3" anchor="9" fill="0" indent="0" use-parent-layout="false">
++            <preferred-size width="34" height="97"/>
++          </grid>
++        </constraints>
++        <properties>
++          <foreground color="-15265861"/>
++          <text value="Name:"/>
++        </properties>
++      </component>
++      <component id="d6fad" class="javax.swing.JButton" binding="Add" custom-create="true">
++        <constraints>
++          <grid row="2" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
++        </constraints>
++        <properties>
++          <background color="-12201573"/>
++          <foreground color="-1"/>
++          <text value="Add participants"/>
++        </properties>
++      </component>
++    </children>
+   </grid>
+ </form>
