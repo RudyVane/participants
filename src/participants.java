@@ -16,7 +16,7 @@ class test extends JFrame {
 
 
     public test() {
-        super("participants");
+
 
         // create form elements
         nameLabel = new JLabel("Name:");
