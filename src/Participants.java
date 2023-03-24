@@ -1,53 +1,76 @@
 import javax.swing.*;
+import java.awt.*;
 
-class Participants extends JFrame {
+public class Participants extends JFrame {
+    private JPanel panel1;
+    //private JPanel panel2;
+    private JLabel nameLabel;
+    private JTextField nameTextField;
+    private JLabel hoursLabel;
+    private JSpinner hoursSpinner;
+    private JLabel minutesLabel;
+    private JSpinner minutesSpinner;
+    private JButton addButton;
+    private JTextArea textArea1;
+    private JTextArea textArea2;
+    private JLabel timeslotLabel;
 
-    private static JLabel nameLabel;
-    private static JTextField nameTextfield;
-    private static JLabel hoursLabel;
-    private static JSpinner hoursSpinner;
-    private static JLabel minutesLabel;
-    private static JSpinner minutesSpinner;
-    private static JButton addButton;
-    private static JTextArea textArea1;
-    private static JTextArea textArea2;
-    private static JLabel timeslotLabel;
-    private static JPanel panel1;
-    private static JPanel panel2;
+    public Participants() {
+        createUIComponents();
 
-    public void main(String[] args) {
-        form();
-    }
+        panel1 = new JPanel();
+        panel1.setLayout(new GridLayout(3, 2));
+        panel1.add(nameLabel);
+        panel1.add(nameTextField);
+        panel1.add(hoursLabel);
+        panel1.add(hoursSpinner);
+        panel1.add(minutesLabel);
+        panel1.add(minutesSpinner);
+        panel1.add(addButton);
+        panel1.add(textArea1);
+        panel1.add(textArea2);
+        panel1.add(timeslotLabel);
+        //add(panel1, BorderLayout.CENTER);
 
-    public void form() {
-        panel2.setLayout(new BoxLayout(panel2, BoxLayout.Y_AXIS));
-        setContentPane(panel1);
-        pack();
+
         addButton.addActionListener(e -> {
-            String name = nameTextfield.getText();
+            String name = nameTextField.getText();
             int hours = (int) hoursSpinner.getValue();
             int minutes = (int) minutesSpinner.getValue();
             String time = String.format("%02d:%02d", hours, minutes);
             textArea1.append(name + " " + time + "\n");
         });
+
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        pack();
         setVisible(true);
     }
-        private void createUIComponents() {
-            // TODO: place custom component creation code here
-            // created by clicking custom create in form
-            panel1 = new JPanel();
-            panel2 = new JPanel();
-            nameLabel = new JLabel("Name:");
-            nameTextfield = new JTextField(20);
-            hoursLabel = new JLabel("h");
-            hoursSpinner = new JSpinner(new SpinnerNumberModel(0, 0, 23, 1));
-            minutesLabel = new JLabel("m");
-            minutesSpinner = new JSpinner(new SpinnerNumberModel(0, 0, 59, 1));
-            addButton = new JButton("Add participants");
-            textArea1 = new JTextArea(10, 20);
-            textArea2 = new JTextArea(10, 20);
 
-
-        }
+    private void createUIComponents() {
+        panel1 = new JPanel();
+        nameLabel = new JLabel("Name:");
+        nameTextField = new JTextField(20);
+        timeslotLabel = new JLabel("Timeslot:");
+        hoursLabel = new JLabel("Hours:");
+        hoursSpinner = new JSpinner(new SpinnerNumberModel(0, 0, 23, 1));
+        minutesLabel = new JLabel("Minutes:");
+        minutesSpinner = new JSpinner(new SpinnerNumberModel(0, 0, 59, 1));
+        addButton = new JButton("Add participants");
+        textArea1 = new JTextArea(10, 20);
+        textArea2 = new JTextArea(10, 20);
     }
+
+    public static void main(String[] args) {
+        new Participants();
+    }
+
+    public void setData(Participants data) {
+    }
+
+    public void getData(Participants data) {
+    }
+
+    public boolean isModified(Participants data) {
+        return false;
+    }
+}
