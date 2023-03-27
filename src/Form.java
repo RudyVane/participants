@@ -14,7 +14,7 @@ public class Form extends JFrame implements ActionListener {
     private String[] participantTimes;
     private int participantCount;
 
-    public Form() {
+    public Form() { 
         participantNames = new String[10];// to store names
         participantTimes = new String[10];// to store times
         participantCount = 0; //makes index for arrays
@@ -25,15 +25,26 @@ public class Form extends JFrame implements ActionListener {
                 int minutes = (int) spinner2.getValue(); // Get the value of the spinner 'minutes'
                 if (!name1.matches("[a-zA-Z]+")) { //check if input is only letter
                     textArea1.append("Name participant not valid!\n");
+                    name.setText("");
                     return;// back to start
                 } // the next part can be in a new method, but I think there is need here
                 String time = String.format("%02d:%02d", hours, minutes); // put hours and minutes in one string
+                if(participantCount != 0) { // check if participant and time are already on the list
+                    for (int i = 0; i < participantCount; i++) {
+                        if (participantNames[i].equals(name1) && participantTimes.equals(time)) {
+                            textArea1.append("participant and time already on list!\n");
+                            name.setText("");
+                            return;// back to start
+                        }
+                    }
+                }
                 participantNames[participantCount] = name1; //stores the name
                 participantTimes[participantCount] = time; // stores the time
                 participantCount++;// counts the number of participants and is the index in the arrays
                 textArea2.append(name1 + " " + time + "\n");// show name and time in textarea 2
                 textArea1.append("Participant added\n");// show message in textarea1
                 textArea1.append("Total participants:" + participantCount + "\n");// I added a line for the totals
+                name.setText("");
             }
         });
     }

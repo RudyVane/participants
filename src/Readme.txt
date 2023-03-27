@@ -16,3 +16,6 @@ een database voor gebruiken, als je met grote aantallen deelnemers werkt.
 In het programma kun je een methode toewvoegen om door de arrays te itereren,
 om te kijken hoeveel deelnemers er op dezelfde tijd zijn,
 of welke deelnemers er op een bepaalde tijd zijn, etc.
+Maandag 27 maart
+Nog een check toegevoegd;
+Kijken of naam en datum al voorkomen in de lijst.
