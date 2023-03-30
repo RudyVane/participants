@@ -19,3 +19,6 @@ of welke deelnemers er op een bepaalde tijd zijn, etc.
 Maandag 27 maart
 Nog een check toegevoegd;
 Kijken of naam en datum al voorkomen in de lijst.
+donderdag 30 maart
+final checks uitgevoerd en nog een paar foutjes hersteld
+

@@ -38,7 +38,7 @@ public class Form extends JFrame implements ActionListener {
         if (e.getSource() == addButton) {
         }
     }
-    public static void main(String[] args) { // sets the panel to be visible on the sreen
+    public static void main(String[] args) { // sets the panel to be visible on the screen
         JFrame frame = new JFrame("Form");
         Form form = new Form();
         frame.setContentPane(form.panel);
@@ -56,36 +56,27 @@ public class Form extends JFrame implements ActionListener {
     }
 }
 class ParticipantsCollection extends Form {
-    static String[] participantNames;
-    static String[] participantTimes;
-    static int participantCount;
+    static String[] participantNames = new String[10];
+    static String[] participantTimes = new String[10];
+    static int participantCount = 0;
     static String time;
-    static String name2;
     static String message;
-
     public ParticipantsCollection(Form form, String name1, int hours, int minutes) {
-        participantNames = new String[10];
-        participantTimes = new String[10];
-        participantCount = 0;
+
         time = String.format("%02d:%02d", hours, minutes);
-        name2 = name1;
-        if (participantCount != 0) { // iterating through array to see if there a no doubles
+        if (participantCount != 0) { // iterating through array to see if there are no doubles
             for (int i = 0; i < participantCount; i++) {
                 if (participantNames[i].equals(name1) && participantTimes[i].equals(time)) {
                     message = "participant and time already on list!\n";
-                    form.setText(name2, time, message); //back to Form class
+                    form.setText("", "", message); //back to Form class
                     return;
                 }
             }
         }
-        participantNames[participantCount] = name2;
+        participantNames[participantCount] = name1;
         participantTimes[participantCount] = time;
         message = "participant added\n";
-        form.setText(name2, time, message); //back to Form class
+        form.setText(name1, time, message); //back to Form class
         participantCount++;
-    }
-
-    public static void main(String[] args) {
-
     }
 }
